@@ -29,6 +29,14 @@
     }
 
     &__form {
+        &.loading {
+            .logo {
+
+                -webkit-animation: App-logo-spin 2s infinite linear;
+                animation: App-logo-spin 2s infinite linear;
+            }
+        }
+
         .input-field {
             margin-bottom: 20px;
         }
@@ -53,17 +61,26 @@
             }
         }
 
+        .error-message {
+            color: #ff0000;
+            margin-bottom: 20px;
+        }
+
         .btn-group {
-            display: inline-block;
             text-align: center;
 
             button {
+                display: inline-block;
                 border: none;
-                padding: 10px 15px;
+                padding: 10px 30px;
                 border-radius: 5px;
                 color: #fff;
                 text-transform: uppercase;
                 background: deepskyblue;
+
+                &[disabled] {
+                    opacity: .5;
+                }
             }
         }
     }
