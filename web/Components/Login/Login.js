@@ -140,6 +140,10 @@ class Login extends React.Component {
                             </button>
                         </div>
                     </form>
+                    <div className="page--login__links">
+                        <a href="#" className="new-account">Create a new account</a>
+                        <a href="#" className="password-recovery">Forgot password?</a>
+                    </div>
                 </div>
             </div>
         );
