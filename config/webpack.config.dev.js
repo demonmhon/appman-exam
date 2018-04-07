@@ -16,7 +16,7 @@ module.exports = {
     },
     devtool: 'eval',
     module: {
-        loaders: [
+        rules: [
             {
                 test: /\.js$/,
                 loaders: ['react-hot-loader', 'babel-loader'],
@@ -28,7 +28,17 @@ module.exports = {
             },
             {
                 test: /\.scss/,
-                loaders: ['style-loader', 'css-loader', 'sass-loader']
+                use: [
+                    {
+                        loader: 'style-loader'
+                    },
+                    {
+                        loader: 'css-loader',
+                    },
+                    {
+                        loader: 'sass-loader'
+                    }
+                ]
             },
             {
                 test: /\.(png|woff|woff2|eot|ttf|svg|jpg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,

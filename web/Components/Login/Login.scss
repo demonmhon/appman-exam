@@ -1,0 +1,70 @@
+
+// Login page
+@import '../../styles/index';
+
+.page--login {
+    font-family: sans-serif;
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+
+    .logo {
+        width: 180px;
+        margin: 0 auto;
+        margin-bottom: 120px;
+    }
+
+    .logo-img {
+        width: 100%;
+    }
+
+    &__panel {
+        background: #fff;
+        width: 400px;
+        margin: 0 auto;
+        padding: 30px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+    }
+
+    &__form {
+        .input-field {
+            margin-bottom: 20px;
+        }
+
+        label,
+        input {
+            width: 100%;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input {
+            padding: 10px 15px;
+            border: solid 2px #edeeed;
+            border-radius: 1rem;
+
+            &:focus {
+                border-color: #242526;
+            }
+        }
+
+        .btn-group {
+            display: inline-block;
+            text-align: center;
+
+            button {
+                border: none;
+                padding: 10px 15px;
+                border-radius: 5px;
+                color: #fff;
+                text-transform: uppercase;
+                background: deepskyblue;
+            }
+        }
+    }
+}
